@@ -2,7 +2,7 @@
 //var randomCode = Math.random().toString(36).substr(2,9);
 //var completionCode = String("QUANT-" + randomCode);
 //var completionMessage = "Thank you for your participation. The results were successfully transmitted. Your participation code is: "+ completionCode;
-var shuffleSequence =seq("setcounter","consent","intro","practiceb1","practiceb2","practiceb3","realexperiment",rshuffle(startsWith("quan")),"exit");
+var shuffleSequence =seq("setcounter","consent","intro","practiceb1","fullexperimentmessage","practiceb2","practiceb3","realexperiment",rshuffle(startsWith("quan")),"exit");
 //var shuffleSequence = seq("practicea1","exit");
 //var shuffleSequence = seq("practiceb1",rshuffle(startsWith("quant")));
 
@@ -71,7 +71,7 @@ var items = [
 //
 //
 //["practicea1","Form", {html:"<p>Remember Ann can't see the picture, but Bob can. So Ann is asking Bob a question about the picture.</p>"+annequestion1+ "<p>Bob: There are more stars than moons.</p>"+ "<p><i>What do you think Anne's question was?</i> (Keep this question in mind because you’ll use it later!)</p>"+ Blanka.html, validators:Blanka.validators}],
-//["fullexperimentmessage", "Form", {html: {include: "fullexperimentmessage.html"},continueMessage:"Click here to continue."}],
+["fullexperimentmessage", "Form", {html: {include: "fullexperimentmessage.html"},continueMessage:"Click here to continue."}],
 //["practicefull1","Form", {html:"<p>Remember Ann can't see the picture, but Bob can. So Ann is asking Bob a question about the picture.</p>"+annequestion1+ "<p>Bob: There are two types of shapes. </p>"+ taskquestion+ Blanka.html,validators:Blanka.validators}, "VraagX", {html:{ include: "practicefull1.html" }}],
 //["practicefull2","Form", {html:"<p>Remember Ann can't see the picture, but Bob can. So Ann is asking Bob a question about the picture.</p>"+annequestion1+ "<p>Bob: Moons are yellow and stars are blue.</p>"+ taskquestion+ Blanka.html,validators:Blanka.validators}, "VraagX", {html:{ include: "practicefull2.html" }}],
 //
