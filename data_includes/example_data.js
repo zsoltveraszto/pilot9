@@ -2,7 +2,7 @@
 //var randomCode = Math.random().toString(36).substr(2,9);
 //var completionCode = String("QUANT-" + randomCode);
 //var completionMessage = "Thank you for your participation. The results were successfully transmitted. Your participation code is: "+ completionCode;
-var shuffleSequence =seq("setcounter","consent","intro","practiceb1","fullexperimentmessage","practiceb2","practiceb3","realexperiment",rshuffle(startsWith("quan")),"exit");
+var shuffleSequence =seq("setcounter","consent","intro","intro2","practiceb1","fullexperimentmessage","practiceb2","practiceb3","realexperiment",rshuffle(startsWith("quan")),"exit");
 //var shuffleSequence = seq("practicea1","exit");
 //var shuffleSequence = seq("practiceb1",rshuffle(startsWith("quant")));
 
@@ -64,6 +64,7 @@ var items = [
     ["sep", "Separator", { }],
     ["consent", "Form", {consentRequired: true, html: { include: "intro.html" }, validators: {},continueMessage:"Click here to continue."} ],
     ["intro", "Form", {html: { include: "example_intro0.html" }, validators: {},continueMessage:"Click here to continue."} ],
+    ["intro2", "Form", {html: { include: "example_intro1.html" }, validators: {},continueMessage:"Click here to continue."} ],
 //    ["ainstructions", "Form", {html: { include: "example_intro1.html" },validators: {},continueMessage:"Click here to continue."} ],
 //    ["binstructions", "Form", {html: { include: "example_intro2.html" },validators: {} ,continueMessage:"Click here to continue."}],
      ["realexperiment", "Form", {html: { include: "example_intro3.html" },validators: {},continueMessage:"Click here to continue."} ],
