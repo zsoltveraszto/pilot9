@@ -11,25 +11,50 @@ margin: -3cm 0cm 0cm 0cm
 .ty {width: 0; height: 0; border-left: 55px solid transparent; border-right: 55px solid transparent; border-bottom: 95px solid DimGray}
 table.center {margin-left:auto; margin-right:auto}
 td{padding-right: 20px; padding-left: 20px; padding-bottom: 10px;}
-
-
+.dx {width: 0;height: 0;border: 25px solid transparent;border-bottom: 45px solid DimGray;position: relative;top: -32px;}
+.dx:after {content: '';position: absolute;left: -25px; top: 44px;width: 0;height: 0;border: 25px solid transparent;border-top: 45px solid dimgray;}
+.starx {position: relative; display: block; width: 0px; height: 0px; right:-12; top:0; border-right: 48px solid transparent; border-bottom: 36px solid dimgray; border-left: 48px solid transparent; -webkit-transform: rotate(37deg); -moz-transform: rotate(37deg); -ms-transform: rotate(37deg); -o-transform: rotate(37deg); transform: rotate(37deg); margin: 28.8px 0;}
+.starx:before {position: absolute;display: block;width: 0;height: 0;top: -22.5px;left: -28.8px;content:'' ;border-bottom: 33.6px solid dimgray;border-left: 11.2px solid transparent;border-right: 11.2px solid transparent;-webkit-transform: rotate(323deg);-moz-transform: rotate(323deg);-ms-transform: rotate(323deg);-o-transform: rotate(323deg);transform: rotate(323deg);}
+.starx:after {position: absolute;display: block;width: 0px;height: 0px;top: 0;left: -48px;content:'' ;border-right: 48px solid transparent;border-bottom: 36px solid dimgray;border-left: 48px solid transparent;-webkit-transform: rotate(286deg);-moz-transform: rotate(286deg);-ms-transform: rotate(286deg);-o-transform: rotate(286deg);transform: rotate(286deg);}
+.mx {position: relative; width: 75px; height: 75px; background: dimgray; border-radius: 38.5px;}
+.mx:after {content:'';position: absolute; width: 57.5px; height: 57.5px; background: white; border-radius: 30px;}
+.hx { position: relative; width: 45px; height: 78.75px; background-color: dimgray; -webkit-border-radius: 25px 25px 0 0; -moz-border-radius: 25px 25px 0 0; border-radius: 25px 25px 0 0; -webkit-transform: rotate(315deg); -moz-transform: rotate(315deg); -ms-transform: rotate(315deg); -o-transform: rotate(315deg); transform: rotate(315deg);}
+.hx:after {position: absolute; width: 78.75px; height: 45px; left: 0; bottom: 0; content: ''; background-color: dimgray; -webkit-border-radius: 25px 25px 0 0; -moz-border-radius: 25px 25px 0 0; border-radius: 0 25px 25px 0;}
 </style>
 
 <div style="width: 25em;">
 
 <p class="ex1">
-In this experiment you are going to see dialogues between Anne and Bob, who are discussing pictures. Each picture shows a number of colored shapes. There are three possible shapes:
+In this experiment you are going to see dialogues between Anne and Bob, who are discussing pictures. Each picture shows a number of colored shapes. There are seven possible shapes:
 </p>
 <table class='center'>
 <tr>
-<td align="center"><i>Square</b></i></td>
+<td align="center"><i>Diamond</b></i></td>
 <td align="center"><i>Circle</b></i></td>
 <td align="center"><i>Triangle</b></i></td>
 </tr>
 <tr>
-<td align="center"><div class='sx'></div></td>
+<td align="center"><div class='dx'></div></td>
 <td align="center"><div class='cb'></div></td>
 <td align="center"><div class='ty'></div></td>
+</tr></table>
+<table class='center'>
+<tr>
+<td align="center"><i>Moon</b></i></td>
+<td align="center"><i>Square</b></i></td>
+<td align="center"><i>Heart</b></i></td>
+</tr>
+<tr>
+<td align="center"><div class='mx'></div></td>
+<td align="center"><div class='sx'></div></td>
+<td align="center"><div class='hx'></div></td>
+</tr></table>
+<table class='center'>
+<tr>
+<td align="center"><i>Star</b></i></td>
+</tr>
+<tr>
+<td align="center"><div class='starx'></div></td>
 </tr></table>
 
 <p>
